@@ -20,95 +20,81 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D0EF4E4C1F06C4AC0033969E /* PBXContainerItemProxy */ = {
+		D0824DE91F09713700B08471 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
+			containerPortal = D0824DDC1F09713700B08471 /* RedisPackage.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = OBJ_179;
+			remoteGlobalIDString = OBJ_176;
 			remoteInfo = Bits;
 		};
-		D0EF4E4E1F06C4AC0033969E /* PBXContainerItemProxy */ = {
+		D0824DEB1F09713700B08471 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
+			containerPortal = D0824DDC1F09713700B08471 /* RedisPackage.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = OBJ_180;
+			remoteGlobalIDString = OBJ_177;
 			remoteInfo = Debugging;
 		};
-		D0EF4E501F06C4AC0033969E /* PBXContainerItemProxy */ = {
+		D0824DED1F09713700B08471 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
+			containerPortal = D0824DDC1F09713700B08471 /* RedisPackage.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = OBJ_181;
+			remoteGlobalIDString = OBJ_178;
 			remoteInfo = libc;
 		};
-		D0EF4E521F06C4AC0033969E /* PBXContainerItemProxy */ = {
+		D0824DEF1F09713700B08471 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
+			containerPortal = D0824DDC1F09713700B08471 /* RedisPackage.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = OBJ_182;
+			remoteGlobalIDString = OBJ_179;
 			remoteInfo = Core;
 		};
-		D0EF4E541F06C4AC0033969E /* PBXContainerItemProxy */ = {
+		D0824DF11F09713700B08471 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
+			containerPortal = D0824DDC1F09713700B08471 /* RedisPackage.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = OBJ_183;
+			remoteGlobalIDString = OBJ_180;
 			remoteInfo = Node;
 		};
-		D0EF4E561F06C4AC0033969E /* PBXContainerItemProxy */ = {
+		D0824DF31F09713700B08471 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
+			containerPortal = D0824DDC1F09713700B08471 /* RedisPackage.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = OBJ_184;
+			remoteGlobalIDString = OBJ_181;
 			remoteInfo = PathIndexable;
 		};
-		D0EF4E581F06C4AC0033969E /* PBXContainerItemProxy */ = {
+		D0824DF51F09713700B08471 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
+			containerPortal = D0824DDC1F09713700B08471 /* RedisPackage.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = OBJ_185;
+			remoteGlobalIDString = OBJ_182;
 			remoteInfo = Sockets;
 		};
-		D0EF4E5A1F06C4AC0033969E /* PBXContainerItemProxy */ = {
+		D0824DF71F09713700B08471 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
+			containerPortal = D0824DDC1F09713700B08471 /* RedisPackage.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = OBJ_186;
+			remoteGlobalIDString = OBJ_183;
 			remoteInfo = Transport;
 		};
-		D0EF4E5C1F06C4AC0033969E /* PBXContainerItemProxy */ = {
+		D0824DF91F09713700B08471 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
+			containerPortal = D0824DDC1F09713700B08471 /* RedisPackage.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = OBJ_187;
+			remoteGlobalIDString = OBJ_184;
 			remoteInfo = Random;
 		};
-		D0EF4E5E1F06C4AC0033969E /* PBXContainerItemProxy */ = {
+		D0824DFB1F09713700B08471 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
+			containerPortal = D0824DDC1F09713700B08471 /* RedisPackage.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = OBJ_188;
+			remoteGlobalIDString = OBJ_185;
 			remoteInfo = Redis;
 		};
-		D0EF4E601F06C4AC0033969E /* PBXContainerItemProxy */ = {
+		D0824E211F09715C00B08471 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = OBJ_189;
-			remoteInfo = Package;
-		};
-		D0EF4E621F06C4AC0033969E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = OBJ_190;
-			remoteInfo = redisTests;
-		};
-		D0EF4E9C1F06C4C60033969E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
+			containerPortal = D0824DDC1F09713700B08471 /* RedisPackage.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_421;
+			remoteGlobalIDString = OBJ_416;
 			remoteInfo = Redis;
 		};
 /* End PBXContainerItemProxy section */
@@ -127,6 +113,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D0824DDC1F09713700B08471 /* RedisPackage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RedisPackage.xcodeproj; path = redisChat/packages/vapor/redis/RedisPackage.xcodeproj; sourceTree = "<group>"; };
 		D09447471EE5FAFB00CD6DA6 /* redisChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = redisChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D094474A1EE5FAFB00CD6DA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D094474C1EE5FAFB00CD6DA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,7 +126,6 @@
 		D09449481EE6084F00CD6DA6 /* PubSubClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PubSubClient.swift; sourceTree = "<group>"; };
 		D094494F1EE60A0A00CD6DA6 /* ChatViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViews.swift; sourceTree = "<group>"; };
 		D0E1C3661EE84D8100B2FFD8 /* DemoUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoUtils.swift; sourceTree = "<group>"; };
-		D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Package.xcodeproj; path = redisChat/packages/vapor/redis/Package.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +139,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D0824DDD1F09713700B08471 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0824DEA1F09713700B08471 /* Bits.framework */,
+				D0824DEC1F09713700B08471 /* Debugging.framework */,
+				D0824DEE1F09713700B08471 /* libc.framework */,
+				D0824DF01F09713700B08471 /* Core.framework */,
+				D0824DF21F09713700B08471 /* Node.framework */,
+				D0824DF41F09713700B08471 /* PathIndexable.framework */,
+				D0824DF61F09713700B08471 /* Sockets.framework */,
+				D0824DF81F09713700B08471 /* Transport.framework */,
+				D0824DFA1F09713700B08471 /* Random.framework */,
+				D0824DFC1F09713700B08471 /* Redis.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D094473E1EE5FAFB00CD6DA6 = {
 			isa = PBXGroup;
 			children = (
@@ -191,28 +194,9 @@
 		D09447861EE6057B00CD6DA6 /* packages */ = {
 			isa = PBXGroup;
 			children = (
-				D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */,
+				D0824DDC1F09713700B08471 /* RedisPackage.xcodeproj */,
 			);
 			name = packages;
-			sourceTree = "<group>";
-		};
-		D0EF4E3E1F06C4AC0033969E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D0EF4E4D1F06C4AC0033969E /* Bits.framework */,
-				D0EF4E4F1F06C4AC0033969E /* Debugging.framework */,
-				D0EF4E511F06C4AC0033969E /* libc.framework */,
-				D0EF4E531F06C4AC0033969E /* Core.framework */,
-				D0EF4E551F06C4AC0033969E /* Node.framework */,
-				D0EF4E571F06C4AC0033969E /* PathIndexable.framework */,
-				D0EF4E591F06C4AC0033969E /* Sockets.framework */,
-				D0EF4E5B1F06C4AC0033969E /* Transport.framework */,
-				D0EF4E5D1F06C4AC0033969E /* Random.framework */,
-				D0EF4E5F1F06C4AC0033969E /* Redis.framework */,
-				D0EF4E611F06C4AC0033969E /* Package.framework */,
-				D0EF4E631F06C4AC0033969E /* redisTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +214,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D0EF4E9D1F06C4C60033969E /* PBXTargetDependency */,
+				D0824E221F09715C00B08471 /* PBXTargetDependency */,
 			);
 			name = redisChat;
 			productName = redisChat;
@@ -266,8 +250,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = D0EF4E3E1F06C4AC0033969E /* Products */;
-					ProjectRef = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
+					ProductGroup = D0824DDD1F09713700B08471 /* Products */;
+					ProjectRef = D0824DDC1F09713700B08471 /* RedisPackage.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -278,88 +262,74 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		D0EF4E4D1F06C4AC0033969E /* Bits.framework */ = {
+		D0824DEA1F09713700B08471 /* Bits.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Bits.framework;
-			remoteRef = D0EF4E4C1F06C4AC0033969E /* PBXContainerItemProxy */;
+			remoteRef = D0824DE91F09713700B08471 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D0EF4E4F1F06C4AC0033969E /* Debugging.framework */ = {
+		D0824DEC1F09713700B08471 /* Debugging.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Debugging.framework;
-			remoteRef = D0EF4E4E1F06C4AC0033969E /* PBXContainerItemProxy */;
+			remoteRef = D0824DEB1F09713700B08471 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D0EF4E511F06C4AC0033969E /* libc.framework */ = {
+		D0824DEE1F09713700B08471 /* libc.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = libc.framework;
-			remoteRef = D0EF4E501F06C4AC0033969E /* PBXContainerItemProxy */;
+			remoteRef = D0824DED1F09713700B08471 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D0EF4E531F06C4AC0033969E /* Core.framework */ = {
+		D0824DF01F09713700B08471 /* Core.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Core.framework;
-			remoteRef = D0EF4E521F06C4AC0033969E /* PBXContainerItemProxy */;
+			remoteRef = D0824DEF1F09713700B08471 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D0EF4E551F06C4AC0033969E /* Node.framework */ = {
+		D0824DF21F09713700B08471 /* Node.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Node.framework;
-			remoteRef = D0EF4E541F06C4AC0033969E /* PBXContainerItemProxy */;
+			remoteRef = D0824DF11F09713700B08471 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D0EF4E571F06C4AC0033969E /* PathIndexable.framework */ = {
+		D0824DF41F09713700B08471 /* PathIndexable.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = PathIndexable.framework;
-			remoteRef = D0EF4E561F06C4AC0033969E /* PBXContainerItemProxy */;
+			remoteRef = D0824DF31F09713700B08471 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D0EF4E591F06C4AC0033969E /* Sockets.framework */ = {
+		D0824DF61F09713700B08471 /* Sockets.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Sockets.framework;
-			remoteRef = D0EF4E581F06C4AC0033969E /* PBXContainerItemProxy */;
+			remoteRef = D0824DF51F09713700B08471 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D0EF4E5B1F06C4AC0033969E /* Transport.framework */ = {
+		D0824DF81F09713700B08471 /* Transport.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Transport.framework;
-			remoteRef = D0EF4E5A1F06C4AC0033969E /* PBXContainerItemProxy */;
+			remoteRef = D0824DF71F09713700B08471 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D0EF4E5D1F06C4AC0033969E /* Random.framework */ = {
+		D0824DFA1F09713700B08471 /* Random.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Random.framework;
-			remoteRef = D0EF4E5C1F06C4AC0033969E /* PBXContainerItemProxy */;
+			remoteRef = D0824DF91F09713700B08471 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D0EF4E5F1F06C4AC0033969E /* Redis.framework */ = {
+		D0824DFC1F09713700B08471 /* Redis.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Redis.framework;
-			remoteRef = D0EF4E5E1F06C4AC0033969E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D0EF4E611F06C4AC0033969E /* Package.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Package.framework;
-			remoteRef = D0EF4E601F06C4AC0033969E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D0EF4E631F06C4AC0033969E /* redisTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = file;
-			path = redisTests.xctest;
-			remoteRef = D0EF4E621F06C4AC0033969E /* PBXContainerItemProxy */;
+			remoteRef = D0824DFB1F09713700B08471 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -395,10 +365,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D0EF4E9D1F06C4C60033969E /* PBXTargetDependency */ = {
+		D0824E221F09715C00B08471 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Redis;
-			targetProxy = D0EF4E9C1F06C4C60033969E /* PBXContainerItemProxy */;
+			targetProxy = D0824E211F09715C00B08471 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

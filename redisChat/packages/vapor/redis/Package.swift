@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Package",
+    name: "RedisPackage",
     dependencies: [
         .Package(url: "https://github.com/vapor/redis.git", majorVersion: 2)
     ]
