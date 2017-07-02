@@ -98,8 +98,10 @@ open class PubSub
                 //msgBucket?.append(msgBlock.substring(with: msgIdEnd!.upperBound..<msgBlock.endIndex))
                 msgBucket?.append(msgBlock.substring(with: msgIdEnd.upperBound ..< msgBlock.endIndex))
 
-                if (msgBucket?.contains("</msg>") == true) {
-                    msgBucket = msgBucket!.substring(with: msgBucket!.startIndex ..< (msgBucket!.endIndex))
+                let msgEndTag = "</msg>"
+                if (msgBucket?.contains(msgEndTag) == true) {
+                    let idx = msgBucket!.index(msgBucket!.endIndex, offsetBy: -msgEndTag.characters.count)
+                    msgBucket = msgBucket!.substring(with: msgBucket!.startIndex ..< idx)
                 }
                 else {
                     self.msgPending[msgId] = msgBucket

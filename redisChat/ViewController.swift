@@ -23,6 +23,9 @@ class ViewController: UITableViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(onSendMessage),
                                                name: ChatTableViewCell.sendButtonNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(onConnect),
+                                               name: ConnectTableViewCell.connectNotification, object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,22 +35,6 @@ class ViewController: UITableViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        pubSub.connectWith(urlDefault, channelSubscriptions: channels, receiveHandler:
-            {
-                (args) in
-                
-                let msg = ChatTableViewAndDelegateDataSource.Message(text: args.0.msg, data: nil, sender: "")
-                
-                self.chatTable?.messages.append(msg)
-                
-                DispatchQueue.main.async(execute: {
-                    self.chatTable?.reloadData()
-                })
-        })
-        
-        //pubSub.send(channels[0], message: "Test message")
-        pubSub.sendMessage("test message", channel: channels[0])
     }
     
     func onSendMessage(notification: AnyObject?) {
@@ -57,6 +44,27 @@ class ViewController: UITableViewController {
         }
         
         pubSub.sendMessage(message, channel: channels[0])
+    }
+    
+    func onConnect(notification: AnyObject?) {
+        guard let cell = notification?.object as? ConnectTableViewCell, let address = cell.textView?.text
+            else {
+                return
+        }
+        
+        pubSub.connectWith(address, channelSubscriptions: channels, receiveHandler:
+            {
+                (args) in
+                
+                let msg = ChatTableViewAndDelegateDataSource.Message(text: args.0.msg, data: nil, sender: "")
+                
+                self.chatTable?.messages.append(msg)
+                
+                DispatchQueue.main.async(execute: {
+                    self.chatTable?.connected = true
+                    self.chatTable?.reloadData()
+                })
+        })
     }
 }
 

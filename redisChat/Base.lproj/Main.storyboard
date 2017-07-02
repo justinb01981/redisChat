@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8Qk-AK-heq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8Qk-AK-heq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12120"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,32 +14,35 @@
         <scene sceneID="4rV-Xy-C2R">
             <objects>
                 <tableViewController id="8Qk-AK-heq" customClass="ViewController" customModule="redisChat" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="162" sectionHeaderHeight="28" sectionFooterHeight="28" id="iyZ-Ou-zOk" customClass="ChatTableViewAndDelegateDataSource" customModule="redisChat" customModuleProvider="target">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="162" sectionHeaderHeight="18" sectionFooterHeight="18" id="iyZ-Ou-zOk" customClass="ChatTableViewAndDelegateDataSource" customModule="redisChat" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatTableViewCellReuseID" rowHeight="162" id="egd-rv-QrI" customClass="ChatTableViewCell" customModule="redisChat" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="162"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatTableViewCellReuseID" id="egd-rv-QrI" customClass="ChatTableViewCell" customModule="redisChat" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="162"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="egd-rv-QrI" id="HUq-vp-8Rw">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="161.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0w9-dz-ReC">
-                                            <rect key="frame" x="329" y="65" width="46" height="30"/>
+                                            <rect key="frame" x="329" y="66" width="46" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="JvR-6q-byR"/>
                                                 <constraint firstAttribute="width" constant="46" id="eGa-FB-ssl"/>
                                             </constraints>
-                                            <state key="normal" title="Send"/>
+                                            <state key="normal" title="Avatar"/>
                                             <connections>
                                                 <action selector="onButton" destination="egd-rv-QrI" eventType="touchUpInside" id="pa0-oY-0QJ"/>
                                             </connections>
                                         </button>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nJk-6i-cVT">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nJk-6i-cVT">
                                             <rect key="frame" x="8" y="8" width="321" height="145.5"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="145.5" id="xqw-aX-Bh2"/>
+                                            </constraints>
                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -57,9 +60,108 @@
                                 <connections>
                                     <outlet property="sendButton" destination="0w9-dz-ReC" id="IOp-eG-Y0k"/>
                                     <outlet property="textView" destination="nJk-6i-cVT" id="Smd-wf-2TM"/>
+                                    <outlet property="textViewHeightContraint" destination="xqw-aX-Bh2" id="28A-RN-3nS"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConnectTableViewCellReuseID" id="tHE-Xa-fxA" customClass="ConnectTableViewCell" customModule="redisChat" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="217.5" width="375" height="162"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tHE-Xa-fxA" id="Iwn-Bp-Q1o">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="161.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkA-R3-7OH">
+                                            <rect key="frame" x="222" y="58" width="59" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="59" id="dD4-Cq-j8d"/>
+                                                <constraint firstAttribute="height" constant="30" id="k4o-KP-Ll1"/>
+                                            </constraints>
+                                            <state key="normal" title="Connect"/>
+                                            <connections>
+                                                <action selector="onButton" destination="tHE-Xa-fxA" eventType="touchUpInside" id="0Jd-5d-6yw"/>
+                                            </connections>
+                                        </button>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="&lt;enter redis server address&gt;" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3HB-g2-01G">
+                                            <rect key="frame" x="14" y="-8" width="200" height="161.5"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="161.5" id="5dM-Th-Yfr"/>
+                                                <constraint firstAttribute="width" constant="200" id="Nse-ln-KHs"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="3HB-g2-01G" secondAttribute="bottom" id="9zA-aB-ZKy"/>
+                                        <constraint firstItem="3HB-g2-01G" firstAttribute="topMargin" secondItem="Iwn-Bp-Q1o" secondAttribute="top" id="Dtd-Ga-PcM"/>
+                                        <constraint firstItem="hkA-R3-7OH" firstAttribute="leading" secondItem="3HB-g2-01G" secondAttribute="trailing" constant="8" id="Sar-XA-cFW"/>
+                                        <constraint firstItem="3HB-g2-01G" firstAttribute="leading" secondItem="Iwn-Bp-Q1o" secondAttribute="leadingMargin" constant="6" id="kX0-4w-nbt"/>
+                                        <constraint firstItem="hkA-R3-7OH" firstAttribute="centerY" secondItem="3HB-g2-01G" secondAttribute="centerY" id="pze-RI-lVM"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="sendButton" destination="hkA-R3-7OH" id="mgM-lO-lnQ"/>
+                                    <outlet property="textView" destination="3HB-g2-01G" id="LIz-Kk-QWL"/>
+                                    <outlet property="textViewHeightContraint" destination="5dM-Th-Yfr" id="Aar-ef-jE9"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewMessageTableViewCellReuseID" id="lmL-iz-Xkw" customClass="NewMessageTableViewCell" customModule="redisChat" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="379.5" width="375" height="162"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lmL-iz-Xkw" id="rz5-0L-7ga">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="161.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KyQ-9W-NYg">
+                                            <rect key="frame" x="8" y="8" width="74" height="33"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="33" id="DYH-eB-L8z"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Odu-1U-Zxe">
+                                            <rect key="frame" x="222" y="82.5" width="59" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="GcN-DG-san"/>
+                                                <constraint firstAttribute="width" constant="59" id="K0d-h8-1Qv"/>
+                                            </constraints>
+                                            <state key="normal" title="Send"/>
+                                            <connections>
+                                                <action selector="onButton" destination="lmL-iz-Xkw" eventType="touchUpInside" id="mqD-cA-Zin"/>
+                                            </connections>
+                                        </button>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EuJ-DU-qBT">
+                                            <rect key="frame" x="14" y="41" width="200" height="112.5"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="200" id="CxV-ek-a4u"/>
+                                                <constraint firstAttribute="height" constant="112.5" id="Xlb-Rz-FZN"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="EuJ-DU-qBT" firstAttribute="leading" secondItem="rz5-0L-7ga" secondAttribute="leadingMargin" constant="6" id="4MF-TW-2fC"/>
+                                        <constraint firstItem="KyQ-9W-NYg" firstAttribute="top" secondItem="rz5-0L-7ga" secondAttribute="topMargin" id="8bQ-oH-5sY"/>
+                                        <constraint firstItem="EuJ-DU-qBT" firstAttribute="top" secondItem="KyQ-9W-NYg" secondAttribute="bottom" id="Av2-5W-eL6"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="EuJ-DU-qBT" secondAttribute="bottom" id="Svq-6c-ClE"/>
+                                        <constraint firstItem="KyQ-9W-NYg" firstAttribute="leading" secondItem="rz5-0L-7ga" secondAttribute="leadingMargin" id="UW6-Jf-1tR"/>
+                                        <constraint firstItem="Odu-1U-Zxe" firstAttribute="centerY" secondItem="EuJ-DU-qBT" secondAttribute="centerY" id="ctF-ib-wny"/>
+                                        <constraint firstItem="Odu-1U-Zxe" firstAttribute="leading" secondItem="EuJ-DU-qBT" secondAttribute="trailing" constant="8" id="nP8-vT-z2R"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="sendButton" destination="Odu-1U-Zxe" id="Wxn-hZ-UXK"/>
+                                    <outlet property="textView" destination="EuJ-DU-qBT" id="fNf-QA-N66"/>
+                                    <outlet property="textViewHeightContraint" destination="Xlb-Rz-FZN" id="45y-qJ-vSB"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="8Qk-AK-heq" id="nyp-F3-RG9"/>
                             <outlet property="delegate" destination="8Qk-AK-heq" id="U6x-Hi-clv"/>

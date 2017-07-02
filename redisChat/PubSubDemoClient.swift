@@ -11,7 +11,7 @@ import UIKit
 import Redis
 import Sockets
 
-let urlDefault = "192.168.1.133"
+let urlDefault = "192.168.1.125"
 
 class PubSubDemoClient : PubSubClient {
     

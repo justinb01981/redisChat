@@ -16,102 +16,99 @@
 		D094494B1EE6084F00CD6DA6 /* PubSubDemoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09449471EE6084F00CD6DA6 /* PubSubDemoClient.swift */; };
 		D094494C1EE6084F00CD6DA6 /* PubSubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09449481EE6084F00CD6DA6 /* PubSubClient.swift */; };
 		D09449501EE60A0A00CD6DA6 /* ChatViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D094494F1EE60A0A00CD6DA6 /* ChatViews.swift */; };
-		D09449861EE667F800CD6DA6 /* Redis.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D09447E41EE6058D00CD6DA6 /* Redis.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D094498A1EE6687600CD6DA6 /* Bits.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D09447AA1EE6058D00CD6DA6 /* Bits.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D094498B1EE6687600CD6DA6 /* Debugging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D09447AC1EE6058D00CD6DA6 /* Debugging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D094498C1EE6687600CD6DA6 /* libc.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D09447AE1EE6058D00CD6DA6 /* libc.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D094498D1EE6687600CD6DA6 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D09447B01EE6058D00CD6DA6 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D094498E1EE6687600CD6DA6 /* Node.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D09447CA1EE6058D00CD6DA6 /* Node.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D094498F1EE6687600CD6DA6 /* PathIndexable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D09447CC1EE6058D00CD6DA6 /* PathIndexable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D09449901EE6687600CD6DA6 /* Sockets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D09447B61EE6058D00CD6DA6 /* Sockets.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D09449911EE6687600CD6DA6 /* Transport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D09447B81EE6058D00CD6DA6 /* Transport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D09449921EE6687600CD6DA6 /* Random.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D09447B21EE6058D00CD6DA6 /* Random.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0E1C3671EE84D8100B2FFD8 /* DemoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E1C3661EE84D8100B2FFD8 /* DemoUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D09447A91EE6058D00CD6DA6 /* PBXContainerItemProxy */ = {
+		D0EF4E4C1F06C4AC0033969E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D09447871EE6058C00CD6DA6 /* Project.xcodeproj */;
+			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = OBJ_610;
+			remoteGlobalIDString = OBJ_179;
 			remoteInfo = Bits;
 		};
-		D09447AB1EE6058D00CD6DA6 /* PBXContainerItemProxy */ = {
+		D0EF4E4E1F06C4AC0033969E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D09447871EE6058C00CD6DA6 /* Project.xcodeproj */;
+			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = OBJ_611;
+			remoteGlobalIDString = OBJ_180;
 			remoteInfo = Debugging;
 		};
-		D09447AD1EE6058D00CD6DA6 /* PBXContainerItemProxy */ = {
+		D0EF4E501F06C4AC0033969E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D09447871EE6058C00CD6DA6 /* Project.xcodeproj */;
+			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = OBJ_612;
+			remoteGlobalIDString = OBJ_181;
 			remoteInfo = libc;
 		};
-		D09447AF1EE6058D00CD6DA6 /* PBXContainerItemProxy */ = {
+		D0EF4E521F06C4AC0033969E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D09447871EE6058C00CD6DA6 /* Project.xcodeproj */;
+			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = OBJ_613;
+			remoteGlobalIDString = OBJ_182;
 			remoteInfo = Core;
 		};
-		D09447B11EE6058D00CD6DA6 /* PBXContainerItemProxy */ = {
+		D0EF4E541F06C4AC0033969E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D09447871EE6058C00CD6DA6 /* Project.xcodeproj */;
+			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = OBJ_614;
-			remoteInfo = Random;
-		};
-		D09447B51EE6058D00CD6DA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D09447871EE6058C00CD6DA6 /* Project.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = OBJ_616;
-			remoteInfo = Sockets;
-		};
-		D09447B71EE6058D00CD6DA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D09447871EE6058C00CD6DA6 /* Project.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = OBJ_617;
-			remoteInfo = Transport;
-		};
-		D09447C91EE6058D00CD6DA6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D09447871EE6058C00CD6DA6 /* Project.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = OBJ_626;
+			remoteGlobalIDString = OBJ_183;
 			remoteInfo = Node;
 		};
-		D09447CB1EE6058D00CD6DA6 /* PBXContainerItemProxy */ = {
+		D0EF4E561F06C4AC0033969E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D09447871EE6058C00CD6DA6 /* Project.xcodeproj */;
+			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = OBJ_627;
+			remoteGlobalIDString = OBJ_184;
 			remoteInfo = PathIndexable;
 		};
-		D09447E31EE6058D00CD6DA6 /* PBXContainerItemProxy */ = {
+		D0EF4E581F06C4AC0033969E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D09447871EE6058C00CD6DA6 /* Project.xcodeproj */;
+			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = OBJ_639;
+			remoteGlobalIDString = OBJ_185;
+			remoteInfo = Sockets;
+		};
+		D0EF4E5A1F06C4AC0033969E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = OBJ_186;
+			remoteInfo = Transport;
+		};
+		D0EF4E5C1F06C4AC0033969E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = OBJ_187;
+			remoteInfo = Random;
+		};
+		D0EF4E5E1F06C4AC0033969E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = OBJ_188;
 			remoteInfo = Redis;
 		};
-		D09449821EE6676D00CD6DA6 /* PBXContainerItemProxy */ = {
+		D0EF4E601F06C4AC0033969E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D09447871EE6058C00CD6DA6 /* Project.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = OBJ_416;
-			remoteInfo = Redis;
+			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = OBJ_189;
+			remoteInfo = Package;
 		};
-		D09449871EE667F800CD6DA6 /* PBXContainerItemProxy */ = {
+		D0EF4E621F06C4AC0033969E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D09447871EE6058C00CD6DA6 /* Project.xcodeproj */;
+			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = OBJ_190;
+			remoteInfo = redisTests;
+		};
+		D0EF4E9C1F06C4C60033969E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = OBJ_416;
+			remoteGlobalIDString = OBJ_421;
 			remoteInfo = Redis;
 		};
 /* End PBXContainerItemProxy section */
@@ -123,16 +120,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D094498A1EE6687600CD6DA6 /* Bits.framework in Embed Frameworks */,
-				D094498B1EE6687600CD6DA6 /* Debugging.framework in Embed Frameworks */,
-				D094498C1EE6687600CD6DA6 /* libc.framework in Embed Frameworks */,
-				D094498D1EE6687600CD6DA6 /* Core.framework in Embed Frameworks */,
-				D094498E1EE6687600CD6DA6 /* Node.framework in Embed Frameworks */,
-				D094498F1EE6687600CD6DA6 /* PathIndexable.framework in Embed Frameworks */,
-				D09449901EE6687600CD6DA6 /* Sockets.framework in Embed Frameworks */,
-				D09449911EE6687600CD6DA6 /* Transport.framework in Embed Frameworks */,
-				D09449921EE6687600CD6DA6 /* Random.framework in Embed Frameworks */,
-				D09449861EE667F800CD6DA6 /* Redis.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,11 +135,11 @@
 		D09447541EE5FAFB00CD6DA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D09447571EE5FAFB00CD6DA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D09447591EE5FAFB00CD6DA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D09447871EE6058C00CD6DA6 /* Project.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Project.xcodeproj; path = redisChat/packages/vapor/redis/Project.xcodeproj; sourceTree = "<group>"; };
 		D09449471EE6084F00CD6DA6 /* PubSubDemoClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PubSubDemoClient.swift; sourceTree = "<group>"; };
 		D09449481EE6084F00CD6DA6 /* PubSubClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PubSubClient.swift; sourceTree = "<group>"; };
 		D094494F1EE60A0A00CD6DA6 /* ChatViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViews.swift; sourceTree = "<group>"; };
 		D0E1C3661EE84D8100B2FFD8 /* DemoUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoUtils.swift; sourceTree = "<group>"; };
+		D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Package.xcodeproj; path = redisChat/packages/vapor/redis/Package.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,24 +191,26 @@
 		D09447861EE6057B00CD6DA6 /* packages */ = {
 			isa = PBXGroup;
 			children = (
-				D09447871EE6058C00CD6DA6 /* Project.xcodeproj */,
+				D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */,
 			);
 			name = packages;
 			sourceTree = "<group>";
 		};
-		D09447881EE6058C00CD6DA6 /* Products */ = {
+		D0EF4E3E1F06C4AC0033969E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D09447AA1EE6058D00CD6DA6 /* Bits.framework */,
-				D09447AC1EE6058D00CD6DA6 /* Debugging.framework */,
-				D09447AE1EE6058D00CD6DA6 /* libc.framework */,
-				D09447B01EE6058D00CD6DA6 /* Core.framework */,
-				D09447CA1EE6058D00CD6DA6 /* Node.framework */,
-				D09447CC1EE6058D00CD6DA6 /* PathIndexable.framework */,
-				D09447B61EE6058D00CD6DA6 /* Sockets.framework */,
-				D09447B81EE6058D00CD6DA6 /* Transport.framework */,
-				D09447B21EE6058D00CD6DA6 /* Random.framework */,
-				D09447E41EE6058D00CD6DA6 /* Redis.framework */,
+				D0EF4E4D1F06C4AC0033969E /* Bits.framework */,
+				D0EF4E4F1F06C4AC0033969E /* Debugging.framework */,
+				D0EF4E511F06C4AC0033969E /* libc.framework */,
+				D0EF4E531F06C4AC0033969E /* Core.framework */,
+				D0EF4E551F06C4AC0033969E /* Node.framework */,
+				D0EF4E571F06C4AC0033969E /* PathIndexable.framework */,
+				D0EF4E591F06C4AC0033969E /* Sockets.framework */,
+				D0EF4E5B1F06C4AC0033969E /* Transport.framework */,
+				D0EF4E5D1F06C4AC0033969E /* Random.framework */,
+				D0EF4E5F1F06C4AC0033969E /* Redis.framework */,
+				D0EF4E611F06C4AC0033969E /* Package.framework */,
+				D0EF4E631F06C4AC0033969E /* redisTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -241,8 +230,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D09449831EE6676D00CD6DA6 /* PBXTargetDependency */,
-				D09449881EE667F800CD6DA6 /* PBXTargetDependency */,
+				D0EF4E9D1F06C4C60033969E /* PBXTargetDependency */,
 			);
 			name = redisChat;
 			productName = redisChat;
@@ -278,8 +266,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = D09447881EE6058C00CD6DA6 /* Products */;
-					ProjectRef = D09447871EE6058C00CD6DA6 /* Project.xcodeproj */;
+					ProductGroup = D0EF4E3E1F06C4AC0033969E /* Products */;
+					ProjectRef = D0EF4E3D1F06C4AC0033969E /* Package.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -290,74 +278,88 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		D09447AA1EE6058D00CD6DA6 /* Bits.framework */ = {
+		D0EF4E4D1F06C4AC0033969E /* Bits.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Bits.framework;
-			remoteRef = D09447A91EE6058D00CD6DA6 /* PBXContainerItemProxy */;
+			remoteRef = D0EF4E4C1F06C4AC0033969E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D09447AC1EE6058D00CD6DA6 /* Debugging.framework */ = {
+		D0EF4E4F1F06C4AC0033969E /* Debugging.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Debugging.framework;
-			remoteRef = D09447AB1EE6058D00CD6DA6 /* PBXContainerItemProxy */;
+			remoteRef = D0EF4E4E1F06C4AC0033969E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D09447AE1EE6058D00CD6DA6 /* libc.framework */ = {
+		D0EF4E511F06C4AC0033969E /* libc.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = libc.framework;
-			remoteRef = D09447AD1EE6058D00CD6DA6 /* PBXContainerItemProxy */;
+			remoteRef = D0EF4E501F06C4AC0033969E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D09447B01EE6058D00CD6DA6 /* Core.framework */ = {
+		D0EF4E531F06C4AC0033969E /* Core.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Core.framework;
-			remoteRef = D09447AF1EE6058D00CD6DA6 /* PBXContainerItemProxy */;
+			remoteRef = D0EF4E521F06C4AC0033969E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D09447B21EE6058D00CD6DA6 /* Random.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Random.framework;
-			remoteRef = D09447B11EE6058D00CD6DA6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D09447B61EE6058D00CD6DA6 /* Sockets.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Sockets.framework;
-			remoteRef = D09447B51EE6058D00CD6DA6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D09447B81EE6058D00CD6DA6 /* Transport.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Transport.framework;
-			remoteRef = D09447B71EE6058D00CD6DA6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D09447CA1EE6058D00CD6DA6 /* Node.framework */ = {
+		D0EF4E551F06C4AC0033969E /* Node.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Node.framework;
-			remoteRef = D09447C91EE6058D00CD6DA6 /* PBXContainerItemProxy */;
+			remoteRef = D0EF4E541F06C4AC0033969E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D09447CC1EE6058D00CD6DA6 /* PathIndexable.framework */ = {
+		D0EF4E571F06C4AC0033969E /* PathIndexable.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = PathIndexable.framework;
-			remoteRef = D09447CB1EE6058D00CD6DA6 /* PBXContainerItemProxy */;
+			remoteRef = D0EF4E561F06C4AC0033969E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D09447E41EE6058D00CD6DA6 /* Redis.framework */ = {
+		D0EF4E591F06C4AC0033969E /* Sockets.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Sockets.framework;
+			remoteRef = D0EF4E581F06C4AC0033969E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D0EF4E5B1F06C4AC0033969E /* Transport.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Transport.framework;
+			remoteRef = D0EF4E5A1F06C4AC0033969E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D0EF4E5D1F06C4AC0033969E /* Random.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Random.framework;
+			remoteRef = D0EF4E5C1F06C4AC0033969E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D0EF4E5F1F06C4AC0033969E /* Redis.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Redis.framework;
-			remoteRef = D09447E31EE6058D00CD6DA6 /* PBXContainerItemProxy */;
+			remoteRef = D0EF4E5E1F06C4AC0033969E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D0EF4E611F06C4AC0033969E /* Package.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Package.framework;
+			remoteRef = D0EF4E601F06C4AC0033969E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D0EF4E631F06C4AC0033969E /* redisTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = file;
+			path = redisTests.xctest;
+			remoteRef = D0EF4E621F06C4AC0033969E /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -393,15 +395,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D09449831EE6676D00CD6DA6 /* PBXTargetDependency */ = {
+		D0EF4E9D1F06C4C60033969E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Redis;
-			targetProxy = D09449821EE6676D00CD6DA6 /* PBXContainerItemProxy */;
-		};
-		D09449881EE667F800CD6DA6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Redis;
-			targetProxy = D09449871EE667F800CD6DA6 /* PBXContainerItemProxy */;
+			targetProxy = D0EF4E9C1F06C4C60033969E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
