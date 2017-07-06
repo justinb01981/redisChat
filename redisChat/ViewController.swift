@@ -38,12 +38,14 @@ class ViewController: UITableViewController {
     }
     
     func onSendMessage(notification: AnyObject?) {
-        guard let cell = notification?.object as? ChatTableViewCell, let message = cell.textView?.text
+        guard let cell = notification?.object as? NewMessageTableFooterViewCell, let message = cell.textField?.text
             else {
             return
         }
         
         pubSub.sendMessage(message, channel: channels[0])
+        
+        chatTable?.reloadData()
     }
     
     func onConnect(notification: AnyObject?) {

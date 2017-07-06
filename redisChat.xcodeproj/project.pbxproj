@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0824E491F0EA93200B08471 /* NewMessageTableFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0824E481F0EA93200B08471 /* NewMessageTableFooterView.xib */; };
 		D094474B1EE5FAFB00CD6DA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D094474A1EE5FAFB00CD6DA6 /* AppDelegate.swift */; };
 		D094474D1EE5FAFB00CD6DA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D094474C1EE5FAFB00CD6DA6 /* ViewController.swift */; };
 		D09447501EE5FAFB00CD6DA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D094474E1EE5FAFB00CD6DA6 /* Main.storyboard */; };
@@ -114,6 +115,7 @@
 
 /* Begin PBXFileReference section */
 		D0824DDC1F09713700B08471 /* RedisPackage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RedisPackage.xcodeproj; path = redisChat/packages/vapor/redis/RedisPackage.xcodeproj; sourceTree = "<group>"; };
+		D0824E481F0EA93200B08471 /* NewMessageTableFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewMessageTableFooterView.xib; sourceTree = "<group>"; };
 		D09447471EE5FAFB00CD6DA6 /* redisChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = redisChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D094474A1EE5FAFB00CD6DA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D094474C1EE5FAFB00CD6DA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				D09449481EE6084F00CD6DA6 /* PubSubClient.swift */,
 				D0E1C3661EE84D8100B2FFD8 /* DemoUtils.swift */,
 				D094474E1EE5FAFB00CD6DA6 /* Main.storyboard */,
+				D0824E481F0EA93200B08471 /* NewMessageTableFooterView.xib */,
 				D09447541EE5FAFB00CD6DA6 /* Assets.xcassets */,
 				D09447561EE5FAFB00CD6DA6 /* LaunchScreen.storyboard */,
 				D09447591EE5FAFB00CD6DA6 /* Info.plist */,
@@ -342,6 +345,7 @@
 				D09447581EE5FAFB00CD6DA6 /* LaunchScreen.storyboard in Resources */,
 				D09447551EE5FAFB00CD6DA6 /* Assets.xcassets in Resources */,
 				D09447501EE5FAFB00CD6DA6 /* Main.storyboard in Resources */,
+				D0824E491F0EA93200B08471 /* NewMessageTableFooterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

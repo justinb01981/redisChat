@@ -14,7 +14,7 @@ import UIKit
 let ChatTableReuseIdClassDict: Dictionary<String, AnyClass> = [
     "ChatTableViewCellReuseID": ChatTableViewCell.classForCoder(),
     "ConnectTableViewCellReuseID": ConnectTableViewCell.classForCoder(),
-    "NewMessageTableViewCellReuseID": NewMessageTableViewCell.classForCoder()
+    "NewMessageTableFooterViewCellReuseID": NewMessageTableFooterViewCell.classForCoder()
 ]
 
 // -- mark: table view / table view controller
@@ -51,13 +51,15 @@ class ChatTableViewAndDelegateDataSource: UITableView, UITableViewDelegate, UITa
         
         separatorStyle = .singleLine
         separatorInset.left = -20
+        
+        register(UINib.init(nibName: "NewMessageTableFooterView", bundle: nil), forHeaderFooterViewReuseIdentifier: "NewMessageTableFooterViewCellReuseID")
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if !connected {
             return 1
         }
-        return messages.count + 1
+        return messages.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -77,13 +79,8 @@ class ChatTableViewAndDelegateDataSource: UITableView, UITableViewDelegate, UITa
         }
         else {
             
-            if indexPath.row >= messages.count {
-                reuseID = "NewMessageTableViewCellReuseID"
-            }
-            else {
-                reuseID = "ChatTableViewCellReuseID"
-                text = messages[indexPath.row].text
-            }
+            reuseID = "ChatTableViewCellReuseID"
+            text = messages[indexPath.row].text
             
             guard let cell = dequeueReusableCell(withIdentifier: reuseID, for: indexPath) as? ChatTableViewCell
                 else {
@@ -103,10 +100,16 @@ class ChatTableViewAndDelegateDataSource: UITableView, UITableViewDelegate, UITa
         if indexPath.row < messages.count && !messages[indexPath.row].text.isEmpty {
             text = messages[indexPath.row].text
         }
-        else {
-            return NewMessageTableViewCell.calcHeight(text)
-        }
         return ChatTableViewCell.calcHeight(text)
+    }
+    
+    public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return NewMessageTableFooterViewCell.calcHeight("example message")
+    }
+    
+    public func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footer = dequeueReusableHeaderFooterView(withIdentifier: "NewMessageTableFooterViewCellReuseID") as? NewMessageTableFooterViewCell
+        return footer
     }
 }
 
@@ -146,10 +149,6 @@ class ChatTableViewAndDelegateDataSource: UITableView, UITableViewDelegate, UITa
     }
     
     @IBAction func onButton() {
-        textView?.endEditing(true)
-        let notification = Notification(name: ChatTableViewCell.sendButtonNotification, object: self,
-                                             userInfo: ["text": textView?.text as Any])
-        NotificationCenter.default.post(notification)
     }
 }
 
@@ -178,19 +177,19 @@ class ChatTableViewAndDelegateDataSource: UITableView, UITableViewDelegate, UITa
     }
 }
 
-@IBDesignable class NewMessageTableViewCell: ChatTableViewCell {
-    override func configure(message msg: String)
-    {
-        super.configure(message: msg)
-        textView?.text = ""
-        sendButton?.isHidden = false
-        
-        textView?.isEditable = true
-        
-        textViewHeightContraint?.constant = 100
+@IBDesignable class NewMessageTableFooterViewCell: UITableViewHeaderFooterView
+{
+    @IBOutlet weak var textField: UITextField?
+    @IBOutlet weak var sendButton: UIButton?
+    
+    class func calcHeight(_ fromText: String) -> CGFloat {
+        return 100
     }
     
-    override class func calcHeight(_ fromText: String) -> CGFloat {
-        return 100
+    @IBAction func onButton() {
+        textField?.endEditing(true)
+        let notification = Notification(name: ChatTableViewCell.sendButtonNotification, object: self,
+                                        userInfo: ["text": textField?.text as Any])
+        NotificationCenter.default.post(notification)
     }
 }
