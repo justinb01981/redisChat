@@ -100,7 +100,7 @@ class ChatTableViewAndDelegateDataSource: UITableView, UITableViewDelegate, UITa
         if indexPath.row < messages.count && !messages[indexPath.row].text.isEmpty {
             text = messages[indexPath.row].text
         }
-        return ChatTableViewCell.calcHeight(text)
+        return connected ? ChatTableViewCell.calcHeight(text) : ConnectTableViewCell.calcHeight(text)
     }
     
     public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
@@ -119,6 +119,10 @@ class ChatTableViewAndDelegateDataSource: UITableView, UITableViewDelegate, UITa
     
 }
 
+@IBDesignable class ChatTableTextField: UITextField {
+    
+}
+
 
 // -- mark: cells
 
@@ -126,6 +130,9 @@ class ChatTableViewAndDelegateDataSource: UITableView, UITableViewDelegate, UITa
     static let sendButtonNotification = Notification.Name("ChatTableViewCellNotification")
     
     @IBOutlet var textView: ChatTableTextView?
+    @IBOutlet var textField: ChatTableTextField?
+    @IBOutlet var textField2: ChatTableTextField?
+    @IBOutlet var textField3: ChatTableTextField?
     @IBOutlet var sender: UILabel?
     @IBOutlet var avatar: UIImageView?
     @IBOutlet var sendButton: UIButton?
@@ -158,7 +165,7 @@ class ChatTableViewAndDelegateDataSource: UITableView, UITableViewDelegate, UITa
     
     override func configure(message msg: String)
     {
-        textView?.text = UserDefaults.standard.string(forKey: ConnectTableViewCell.defaultServer)
+        textField?.text = UserDefaults.standard.string(forKey: ConnectTableViewCell.defaultServer)
         
         guard let constant = textView?.sizeThatFits(CGSizeFromString("empty")).height else {
             return
@@ -168,12 +175,16 @@ class ChatTableViewAndDelegateDataSource: UITableView, UITableViewDelegate, UITa
     }
     
     @IBAction override func onButton() {
-        textView?.endEditing(true)
+        textField?.endEditing(true)
         let notification = Notification(name: ConnectTableViewCell.connectNotification, object: self,
-                                        userInfo: ["text": textView?.text as Any])
+                                        userInfo: ["text": textField?.text as Any])
         NotificationCenter.default.post(notification)
         
-        UserDefaults.standard.set(textView?.text, forKey: ConnectTableViewCell.defaultServer)
+        UserDefaults.standard.set(textField?.text, forKey: ConnectTableViewCell.defaultServer)
+    }
+    
+    override class func calcHeight(_ fromText: String) -> CGFloat {
+        return 200
     }
 }
 

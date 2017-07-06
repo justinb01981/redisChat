@@ -14,7 +14,7 @@ class ViewController: UITableViewController {
     var pubSub: PubSubDemo = PubSubDemo()
     var chatTable: ChatTableViewAndDelegateDataSource?
     
-    let channels = ["room1"]
+    var channel:String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,23 +38,28 @@ class ViewController: UITableViewController {
     }
     
     func onSendMessage(notification: AnyObject?) {
-        guard let cell = notification?.object as? NewMessageTableFooterViewCell, let message = cell.textField?.text
+        guard let cell = notification?.object as? NewMessageTableFooterViewCell, let message = cell.textField?.text, let channel = channel
             else {
             return
         }
         
-        pubSub.sendMessage(message, channel: channels[0])
+        pubSub.sendMessage(message, channel: channel)
         
         chatTable?.reloadData()
     }
     
     func onConnect(notification: AnyObject?) {
-        guard let cell = notification?.object as? ConnectTableViewCell, let address = cell.textView?.text
+        guard let cell = notification?.object as? ConnectTableViewCell,
+            let address = cell.textField?.text,
+            let nickname = cell.textField2?.text,
+            let channel = cell.textField3?.text
             else {
                 return
         }
         
-        pubSub.connectWith(address, channelSubscriptions: channels, receiveHandler:
+        self.channel = channel
+        
+        pubSub.connectWith(address, channelSubscriptions: [channel], receiveHandler:
             {
                 (args) in
                 

@@ -16,38 +16,50 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cea-m1-cDJ">
-                    <rect key="frame" x="8" y="61" width="292" height="30"/>
-                    <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9O-nJ-YX8">
-                    <rect key="frame" x="308" y="61" width="51" height="30"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fr-bD-QSB">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Message:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odd-oi-h9d">
+                            <rect key="frame" x="8" y="8" width="113" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cea-m1-cDJ">
+                            <rect key="frame" x="8" y="37" width="292" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9O-nJ-YX8">
+                            <rect key="frame" x="308" y="36" width="51" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="51" id="pS0-is-EhI"/>
+                            </constraints>
+                            <state key="normal" title="Send"/>
+                            <connections>
+                                <action selector="onButton" destination="-1" eventType="touchUpInside" id="fqr-MY-nYh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="51" id="Kdr-Ik-2VG"/>
+                        <constraint firstItem="odd-oi-h9d" firstAttribute="leading" secondItem="4fr-bD-QSB" secondAttribute="leadingMargin" id="3sV-62-fUZ"/>
+                        <constraint firstItem="Cea-m1-cDJ" firstAttribute="baseline" secondItem="y9O-nJ-YX8" secondAttribute="baseline" id="9Fs-lK-EDJ"/>
+                        <constraint firstAttribute="trailing" secondItem="y9O-nJ-YX8" secondAttribute="trailing" constant="16" id="CRO-Ys-3K2"/>
+                        <constraint firstItem="odd-oi-h9d" firstAttribute="leading" secondItem="Cea-m1-cDJ" secondAttribute="leading" id="Qpz-f9-cSD"/>
+                        <constraint firstItem="y9O-nJ-YX8" firstAttribute="leading" secondItem="Cea-m1-cDJ" secondAttribute="trailing" constant="8" symbolic="YES" id="Tdk-do-D7O"/>
+                        <constraint firstItem="odd-oi-h9d" firstAttribute="top" secondItem="4fr-bD-QSB" secondAttribute="topMargin" id="iiX-Zb-pkl"/>
+                        <constraint firstItem="Cea-m1-cDJ" firstAttribute="top" secondItem="odd-oi-h9d" secondAttribute="bottom" constant="8" symbolic="YES" id="riv-0J-aSq"/>
                     </constraints>
-                    <state key="normal" title="Send"/>
-                    <connections>
-                        <action selector="onButton" destination="-1" eventType="touchUpInside" id="fqr-MY-nYh"/>
-                    </connections>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Message:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odd-oi-h9d">
-                    <rect key="frame" x="8" y="32" width="113" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="odd-oi-h9d" firstAttribute="leading" secondItem="W3z-Ug-xhH" secondAttribute="leadingMargin" id="1OT-vs-78f"/>
-                <constraint firstItem="Cea-m1-cDJ" firstAttribute="top" secondItem="odd-oi-h9d" secondAttribute="bottom" constant="8" symbolic="YES" id="2ln-6v-WPz"/>
-                <constraint firstItem="odd-oi-h9d" firstAttribute="top" secondItem="W3z-Ug-xhH" secondAttribute="top" constant="32" id="81k-2t-se3"/>
-                <constraint firstItem="Cea-m1-cDJ" firstAttribute="top" secondItem="y9O-nJ-YX8" secondAttribute="top" id="LxJ-rk-IxI"/>
-                <constraint firstItem="y9O-nJ-YX8" firstAttribute="leading" secondItem="Cea-m1-cDJ" secondAttribute="trailing" constant="8" symbolic="YES" id="b5j-Rs-nAR"/>
-                <constraint firstAttribute="trailing" secondItem="y9O-nJ-YX8" secondAttribute="trailing" constant="16" id="hMY-UF-Bce"/>
-                <constraint firstItem="odd-oi-h9d" firstAttribute="leading" secondItem="Cea-m1-cDJ" secondAttribute="leading" id="tnu-dL-CjK"/>
+                <constraint firstAttribute="trailing" secondItem="4fr-bD-QSB" secondAttribute="trailing" id="NAH-zV-W3P"/>
+                <constraint firstAttribute="bottom" secondItem="4fr-bD-QSB" secondAttribute="bottom" id="al4-nZ-MFD"/>
+                <constraint firstItem="4fr-bD-QSB" firstAttribute="top" secondItem="W3z-Ug-xhH" secondAttribute="top" id="hmg-TP-i90"/>
+                <constraint firstItem="4fr-bD-QSB" firstAttribute="leading" secondItem="W3z-Ug-xhH" secondAttribute="leading" id="qlQ-DO-sO2"/>
             </constraints>
             <connections>
                 <outlet property="sendButton" destination="y9O-nJ-YX8" id="GBs-Pu-KXZ"/>
